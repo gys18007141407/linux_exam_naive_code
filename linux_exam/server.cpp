@@ -154,7 +154,7 @@ void threadFUNC(int connectSocket){  // serve client
         ofs.close();
 
 
-        // deserialize
+        // store to buffer
         ifs.open("server.data");
         ifs.read(buffer, BUFFER_LEN);
         ifs.close();
